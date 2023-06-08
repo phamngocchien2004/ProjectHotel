@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RoomController">
+   <children>
+      <Text fill="#2ad300" layoutX="398.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Room">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="34.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tbV" layoutX="48.0" layoutY="165.0" prefHeight="267.0" prefWidth="905.0">
+        <columns>
+          <TableColumn fx:id="tcRoom" prefWidth="172.0" text="Room" />
+          <TableColumn fx:id="tcType" prefWidth="289.0" text="Type" />
+            <TableColumn fx:id="tcPrice" prefWidth="228.0" text="Price" />
+            <TableColumn fx:id="tcStatus" prefWidth="215.0" text="Status" />
+        </columns>
+      </TableView>
+      <MenuButton layoutX="719.0" layoutY="109.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="187.0" text="Customer">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <TextField styleClass="search" layoutX="48.0" layoutY="109.0" prefHeight="31.0" prefWidth="562.0" promptText="Search" stylesheets="@stylesheet.css" />
+      <Text layoutX="54.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room :" />
+      <TextField layoutX="110.0" layoutY="481.0" styleClass="textfield" />
+      <Text layoutX="57.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :" />
+      <Text layoutX="416.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status :" />
+      <TextField layoutX="477.0" layoutY="556.0" styleClass="textfield" />
+      <Text layoutX="420.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :" />
+      <ComboBox fx:id="combobox" layoutX="110.0" layoutY="556.0" prefHeight="31.0" prefWidth="186.0" styleClass="combo1-box" stylesheets="@stylesheet.css" />
+      <ComboBox layoutX="477.0" layoutY="481.0" prefHeight="31.0" prefWidth="186.0" styleClass="combo1-box" stylesheets="@stylesheet.css" />
+      <Button layoutX="739.0" layoutY="481.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" styleClass="btn" text="Add" textFill="WHITE" />
+      <Button layoutX="739.0" layoutY="556.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" styleClass="btn" text="Clear" textFill="WHITE" />
+      <Button layoutX="884.0" layoutY="481.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" styleClass="btn" text="Update" textFill="WHITE" />
+      <Button layoutX="884.0" layoutY="556.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" styleClass="btn" text="Delete" textFill="WHITE" />
+   </children>
+    <stylesheets>
+        <URL value="@stylesheet.css" />
+    </stylesheets>
+</Pane>

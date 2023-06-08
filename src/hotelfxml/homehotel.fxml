@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<Pane fx:controller="Controller.HomeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" styleClass="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button onAction="#ManageRoom" layoutX="768.0" layoutY="202.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="174.0" style="-fx-font-family: arial;" styleClass="btn" text="Manage Room" textFill="#fffefe" />
+      <Button layoutX="768.0" layoutY="277.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="174.0" styleClass="btn" text="Customer Checkin" textFill="WHITE" />
+      <Button layoutX="768.0" layoutY="349.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="174.0" styleClass="btn" text="Customer Checkout" textFill="WHITE" />
+      <Button layoutX="768.0" layoutY="427.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="174.0" styleClass="btn" text="Bill Details" textFill="WHITE" />
+      <Text layoutX="266.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel management system">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="40.0" />
+         </font>
+      </Text>
+   </children>
+   <stylesheets>
+      <URL value="@stylesheet.css" />
+   </stylesheets>
+</Pane>
